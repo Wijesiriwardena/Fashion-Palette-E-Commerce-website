@@ -1,0 +1,151 @@
+
+#filters-navbar {
+    position: sticky;
+    background-color: #bbbbbb;
+    z-index: 80;
+
+    .custom-select {
+        background-color: #bbbbbb;
+        border-radius: 0;
+        border-top: 1px solid rgba(80, 80, 80, 0.6);
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 0;
+        font-size: 13px;
+        padding-left: 2px;
+
+        &:focus {
+            outline: 0;
+            border-color: var(--secondary-hover);
+            box-shadow: 0 0 0 0.1rem var(--secondary-hover);
+        }
+    }
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.product-brand {
+    font-size: 16px;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.product-discount {
+    font-size: 12px;
+}
+
+.product-flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.product-color {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.out-of-stock {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.remove-link {
+    font-size: 12px;
+    color: var(--secondary);
+
+    &:hover {
+        text-decoration: none;
+        color: var(--secondary);
+        cursor: pointer;
+    }
+}
+
+.delivery-info {
+    color: #444444;
+    border: 1px solid #ababab;
+    padding: 20px 5px;
+}
+
+.card-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.image-card-container {
+    position: relative;
+
+    .image-card-favourite-container {
+        position: absolute;
+        display: inline-flex;
+        justify-content: flex-end;
+        padding: 10px;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        .favourite-badge {
+            color: white;
+            background-color: var(--secondary);
+        }
+    }
+
+    .image-card-buttons-container {
+        position: absolute;
+        display: inline-flex;
+        justify-content: flex-end;
+        padding: 10px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        .image-card-button {
+            background-color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 18px;
+            font-size: 16px;
+            margin-left: 5px;
+
+            i {
+                color: var(--secondary);
+            }
+        }
+    }
+}
+
+#remove-from-favourite {
+    background-color: var(--secondary) !important;
+
+    i {
+        color: white !important;
+    }
+}
+
+.custom-selected {
+    border-color: var(--secondary-hover) !important;
+}
+
+.filter-label {
+    margin-bottom: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.customize-info {
+    font-size: 12px;
+    margin-bottom: 0;
+}

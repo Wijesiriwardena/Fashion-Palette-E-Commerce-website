@@ -1,0 +1,243 @@
+
+:root {
+    --primary: #1f1f1f;
+    --primary-hover: #252525;
+    --secondary: crimson;
+    --secondary-hover: rgb(192, 27, 60);
+    --primary-navbar-height: 60px
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.with-icon {
+    padding-left: 36px;
+}
+
+.btn-delete, .btn-edit, .btn-toggle {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-delete {
+    color: crimson;
+}
+
+.btn-toggle {
+    color: green;
+}
+
+.btn-edit {
+    color: var(--primary);
+}
+
+.btn-custom-primary {
+    color: white;
+    border-color: var(--primary);
+    background-color: var(--primary);
+    padding: 0.5rem;
+}
+
+.btn-custom-secondary {
+    color: white;
+    border-color: var(--secondary);
+    background-color: var(--secondary);
+    padding: 0.5rem;
+}
+
+.btn-custom-primary:hover, .btn-custom-primary:active, .btn-custom-primary:focus {
+    color: white;
+    border-color: var(--primary-hover) !important;
+    background-color: var(--primary-hover) !important;
+}
+
+.btn-custom-secondary:hover, .btn-custom-secondary:active, .btn-custom-secondary:focus {
+    color: white;
+    border-color: var(--secondary-hover) !important;
+    background-color: var(--secondary-hover) !important;
+}
+
+.custom-container {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    box-shadow: 1px 0 30px rgba(255, 155, 155, 0.15);
+    border-radius: 8px;
+    width: 40%;
+}
+
+.custom-container-xl {
+    width: 100% !important;
+}
+
+.custom-container-lg {
+    width: 80% !important;
+}
+
+.custom-container-md {
+    width: 60% !important;
+}
+
+.custom-form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    height: auto;
+
+    .form-control {
+        height: calc(2em + .75rem + 2px);
+    }
+
+    .custom-select {
+        height: calc(2em + .75rem - 2px);
+    }
+}
+
+.form-title, .form-link, .brand-name, .brand-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--primary);
+}
+
+.form-sub-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-size: 12px;
+}
+
+.form-link {
+    color: var(--secondary);
+    font-size: 14px;
+}
+
+.form-link:hover {
+    cursor: pointer;
+    color: var(--secondary-hover);
+}
+
+.form-title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #444444;
+}
+
+.form-group.required .control-label:after {
+    content: "*";
+    color: crimson;
+}
+
+.brand-name {
+    align-items: center;
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.brand-icon {
+    font-size: 46px;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.with-icon {
+    padding-left: 36px;
+}
+
+.input-wrapper {
+    position: relative;
+
+    input {
+        font-size: 14px;
+    }
+}
+
+.input-icon {
+    left: 12px;
+    font-size: 14px;
+    position: absolute;
+    top: calc(50% - 0.5em);
+    color: gray;
+}
+
+.img-container {
+    position: relative;
+
+    .image-card-favourite-container {
+        position: absolute;
+        display: inline-flex;
+        justify-content: flex-start;
+        padding: 20px;
+        top: 0;
+        right: 0;
+        width: 100%;
+
+        .favourite-badge {
+            font-size: 18px;
+            color: white;
+            background-color: var(--secondary);
+        }
+    }
+}
+
+.img-container img {
+    position: absolute;
+    width: 90%;
+    max-height: 650px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-icon {
+    left: 12px;
+    font-size: 14px;
+    position: absolute;
+    top: calc(50% - 0.5em);
+    color: gray;
+}
+
+.table-header-min {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#promos {
+    height: 40px;
+    color: black;
+    background-color: rgb(204, 255, 0);
+
+    .promo-info {
+        display: flex;
+        justify-content: center;
+
+        .promo-text {
+            font-size: 12px;
+            padding-left: 10px;
+            padding-right: 10px;
+            line-height: 40px;
+            font-weight: 600;
+        }
+    }
+
+    .active {
+        color: black;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 12px;
+        height: 12px;
+        filter: invert(100%);
+    }
+}
